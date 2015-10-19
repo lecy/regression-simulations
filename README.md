@@ -46,7 +46,7 @@ rm( samp.distritution.of.slope )
 
 url.04 <- "https://raw.githubusercontent.com/lecy/regression-simulations/master/sizeOfBias.R"
 size.of.bias <- getURL( url.04, ssl.verifypeer = FALSE )
-eval( parse( text=samp.size.of.bias  ) )
+eval( parse( text=size.of.bias  ) )
 
 rm( url.04 )
 rm( size.of.bias )
