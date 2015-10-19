@@ -58,7 +58,9 @@ rm( size.of.bias )
 
 ## FUNCTION createSample
 
-Demonstrates drawing a sample of given size from the population (works up to 100). 
+Demonstrates drawing a sample of given size from the population (the population is 100 in this case, so sample sizes up to 100 are valid). 
+
+The function draws the sample, draws the true regression slope, then draws the slope calculated from the sample.
 
 ~~~r
 	createSample( 10 )
@@ -72,7 +74,7 @@ Demonstrates drawing a sample of given size from the population (works up to 100
 
 ## SAMPLING DISTRIBUTION OF SLOPE
 
-
+This function performs the same operation as the createSample function above, but it repeatedly draws samples from the population and creates a distribution of the observed slopes. This is a demonstration of the standard error of the slope that results from variance in sampling.
 
 ~~~r
 	sampDistOfSlope( num.trials=1000, samp.size=10, slowSim=F )
@@ -90,6 +92,12 @@ Demonstrates drawing a sample of given size from the population (works up to 100
 
 
 ## CONFIDENCE INTERVALS
+
+Similar to above, this function repeatedly draws samples from a population, but instead of creating a distribution representing the standard error, confidence intervals are drawn.
+
+If we draw a 95% confidence interval, then approximately 95 out of 100 samples will result in confidence intervals that contain the true slope. 
+
+Note, if a confidence interval contains zero, the slope is not statistically significant at the 0.05 level. This allows us to examine the relationship between effect size (the slope), sample size, and statistical significance. It is easy to achieve significance when the sample size is large, or when the program effect is large.
 
 ~~~r
 	confIntervalOfSlope( num.trials=100, samp.size=10, effect.size=3, slowSim=T )
@@ -109,6 +117,20 @@ Demonstrates drawing a sample of given size from the population (works up to 100
 
 
 ## OMITTED VARIABLE BIAS
+
+In this simulation we examine two models:
+
+y = b0 + b1*x1 + b2*x2  [full model]
+
+y = b0 + b1*x1  [naive model because we don't know about x2]
+
+The question is, when will the naive model behave similar to the full (true) model?
+
+Here we iterate through scenarios, starting with a strong positive correlation between X1 and X2, going to zero correlation, and finishing with a strong negative correlation between X1 and X2.
+
+When the correlation between X1 and X2 is high, the slope between X1 and Y is impact. When the correlation between X1 and X2 is low, there is minimal effect (bias). 
+
+Increasing the sample size does NOT mitigate bias.
 
 ~~~r
 
