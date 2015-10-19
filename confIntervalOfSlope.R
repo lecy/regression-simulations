@@ -56,7 +56,9 @@ confIntervalOfSlope <- function( num.trials=100, samp.size=10, effect.size=1, sl
 		
 
 		
-		plot( x=0, y=0, ylim=c(0,num.trials), xlim=c(effect.size-10, effect.size+10), col="white", xlab="Slope", ylab="Trial #" )
+		plot( x=0, y=0, ylim=c(0,num.trials), xlim=c(effect.size-10, 
+		      effect.size+10), col="white", xlab="Slope", ylab="Trial #",
+		      main="95% Confidence Interval" )
 		
 		points( slopes, 1:i, pch=20, col="red"  )
 		
