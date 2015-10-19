@@ -21,6 +21,9 @@ conf.interval.of.slope <- getURL( url.01, ssl.verifypeer = FALSE )
 # Evaluate the code to initiate the function in R
 eval( parse( text=conf.interval.of.slope  ) )
 
+# clean up
+rm( url.01 )
+rm( conf.interval.of.slope )
 
 
 # createSample function
