@@ -75,5 +75,5 @@ confIntervalOfSlope <- function( num.trials=100, samp.size=10, effect.size=1, sl
 }
 
 
-confIntervalOfSlope( num.trials=100, samp.size=10, effect.size=3, slowSim=T )
+
 
