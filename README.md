@@ -3,11 +3,13 @@
 Simulations of standard errors, confidence intervals, statistical significance, and omitted variable bias in regression analysis. Scripts are written in R.
 
 
+## Source the Regression Simulation Code
 
 
 
-# FUNCTION createSample
+## FUNCTION createSample
 
+Demonstrates drawing a sample of given size from the population (works up to 100). 
 
 ~~~r
 	createSample( 10 )
@@ -19,9 +21,9 @@ Simulations of standard errors, confidence intervals, statistical significance, 
 
 
 
-# SAMPLING DISTRIBUTION OF SLOPE
+## SAMPLING DISTRIBUTION OF SLOPE
 
-~~~
+~~~r
 	sampDistOfSlope( num.trials=1000, samp.size=10, slowSim=F )
 
 
@@ -36,9 +38,9 @@ Simulations of standard errors, confidence intervals, statistical significance, 
 
 
 
-# CONFIDENCE INTERVALS
+## CONFIDENCE INTERVALS
 
-~~~
+~~~r
 	confIntervalOfSlope( num.trials=100, samp.size=10, effect.size=3, slowSim=T )
 	
 	
@@ -55,9 +57,9 @@ Simulations of standard errors, confidence intervals, statistical significance, 
 
 
 
-# OMITTED VARIABLE BIAS
+## OMITTED VARIABLE BIAS
 
-~~~
+~~~r
 
 	# First show the bias in the slopes
 
