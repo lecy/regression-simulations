@@ -16,10 +16,10 @@ library( RCurl )
 url.01 <- "https://raw.githubusercontent.com/lecy/regression-simulations/master/confIntervalOfSlope.R"
 
 # Use getURL from RCurl to source the code
-my.script <- getURL( url.01, ssl.verifypeer = FALSE )
+conf.interval.of.slope <- getURL( url.01, ssl.verifypeer = FALSE )
 
 # Evaluate the code to initiate the function in R
-eval( parse( text=my.script  ) )
+eval( parse( text=conf.interval.of.slope  ) )
 
 
 
