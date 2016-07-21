@@ -1,6 +1,23 @@
-# regression-simulations
+# Regression Simulations
 
-Simulations of standard errors, confidence intervals, statistical significance, and omitted variable bias in regression analysis. Scripts are written in R.
+This tutorial contains regression simulations of standard errors of the slope, confidence intervals of the slope, demonstration of statistical significance, demonstration of the impact of measurement error on regression models, and the impact of omitted variable bias in regression analysis. Scripts are written in R.
+
+## From Samples to Confidence Intervals
+
+We take repeated samples from a population of 100 individuals. A slope, standard error, and 95% confidence interval is drawn for each sample and plotted on the right. Assume data is from an experiment where X represents the dosage and Y represents the response, so we interpret the slope as an effect.
+
+Statistical significance can be determined by whethe the confidence interval contains the null hypothesis (slope = 0). If it does the interpretation is that we cannot tell if the treatment has a positive or a negative impact on the outcome, so we have low confidence in our estimation.
+
+We want understand the relationships between four things:
+* Sample size
+* Effect size (slope)
+* Confidence intervals
+* Statistical significance
+
+![alt text](./GIFS/confidence intervals.gif "Confidence intervals with sample size of 25" )
+
+Demonstration of 95% confidence intervals. Approximately 95 out of 100 samples will result in confidence intervals that contain the true slope. Note, if a confidence interval contains zero, the slope is not statistically significant at the alpha=0.05 level. 
+
 
 
 ## Source the Regression Simulation Code
