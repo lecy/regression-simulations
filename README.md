@@ -1,6 +1,16 @@
 # Regression Simulations
 
-This tutorial contains regression simulations of standard errors of the slope, confidence intervals of the slope, demonstration of statistical significance, demonstration of the impact of measurement error on regression models, and the impact of omitted variable bias in regression analysis. Scripts are written in R.
+This tutorial contains regression simulations of standard errors of the slope, confidence intervals of the slope, demonstration of statistical significance, demonstration of the impact of measurement error on regression models, and the impact of omitted variable bias in regression analysis. 
+
+Scripts are written in R. To run these examples in class, you need to source the following code (or download the scripts from this repository):
+
+~~~r
+
+source( "https://raw.githubusercontent.com/lecy/regression-simulations/master/confIntervalOfSlope.R" )
+source( "https://raw.githubusercontent.com/lecy/regression-simulations/master/createSample.R" )
+source( "https://raw.githubusercontent.com/lecy/regression-simulations/master/sampDistOfSlope.R" )
+source( "https://raw.githubusercontent.com/lecy/regression-simulations/master/sizeOfBias.R" )
+~~~
 
 ## From Samples to Confidence Intervals
 
@@ -14,71 +24,24 @@ We want understand the relationships between four things:
 * Confidence intervals
 * Statistical significance
 
+### Sample Size of 10, Effect Size of 3
+
+```r
+	confIntervalOfSlope( num.trials=100, samp.size=10, effect.size=3, slowSim=T )
+```	
+
 ![alt text](./GIFS/confidence intervals.gif "Confidence intervals with sample size of 25" )
 
 Demonstration of 95% confidence intervals. Approximately 95 out of 100 samples will result in confidence intervals that contain the true slope. Note, if a confidence interval contains zero, the slope is not statistically significant at the alpha=0.05 level. 
 
 
 
-## Source the Regression Simulation Code
-
-~~~r
-
-# Load required packages 
-library( RCurl )
-
-# confidenceIntervalOfSlope function:
-
-# Create an object for the function URL
-url.01 <- "https://raw.githubusercontent.com/lecy/regression-simulations/master/confIntervalOfSlope.R"
-
-# Use getURL from RCurl to source the code
-conf.interval.of.slope <- getURL( url.01, ssl.verifypeer = FALSE )
-
-# Evaluate the code to initiate the function in R
-eval( parse( text=conf.interval.of.slope  ) )
-
-# clean up
-rm( url.01 )
-rm( conf.interval.of.slope )
-
-
-# createSample function
-
-url.02 <- "https://raw.githubusercontent.com/lecy/regression-simulations/master/createSample.R"
-create.sample <- getURL( url.02, ssl.verifypeer = FALSE )
-eval( parse( text=create.sample  ) )
-
-rm( url.02 )
-rm( create.sample )
-
-# sampling distribution of the slope function
-
-url.03 <- "https://raw.githubusercontent.com/lecy/regression-simulations/master/sampDistOfSlope.R"
-samp.distritution.of.slope <- getURL( url.03, ssl.verifypeer = FALSE )
-eval( parse( text=samp.distritution.of.slope  ) )
-
-rm( url.03 )
-rm( samp.distritution.of.slope )
-
-
-# size of bias function
-
-url.04 <- "https://raw.githubusercontent.com/lecy/regression-simulations/master/sizeOfBias.R"
-size.of.bias <- getURL( url.04, ssl.verifypeer = FALSE )
-eval( parse( text=size.of.bias  ) )
-
-rm( url.04 )
-rm( size.of.bias )
 
 
 
-~~~
+## Take a Sample and Draw a Slope
 
-
-## FUNCTION createSample
-
-Demonstrates drawing a sample of given size from the population (the population is 100 in this case, so sample sizes up to 100 are valid). 
+Demonstrates the drawing of a sample of given size from the population (the population is 100 in this case, so sample sizes up to 100 are valid). 
 
 The function draws the sample, draws the true regression slope, then draws the slope calculated from the sample.
 
