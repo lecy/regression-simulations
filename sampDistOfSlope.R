@@ -38,7 +38,7 @@ sampDistOfSlope <- function( num.trials=1000, samp.size=10, slowSim=F )
 
 		abline( a= r1$coefficients[1], b= r1$coefficients[2], col="red", lwd=2 )
 		
-		hist( slopes1, col="red", xlim=c(-5, 6), ylim=c(0,num.trials/4), breaks=12, main="True Slope = 1" )
+		hist( slopes1, col="red", xlim=c(-5, 6), ylim=c(0,num.trials/4), breaks=25, main="True Slope = 1" )
 
 	
 	}
