@@ -4,6 +4,10 @@ This tutorial contains regression simulations of basic components of the regress
 
 It was inspired by the [sampling distribution of the mean](http://onlinestatbook.com/stat_sim/sampling_dist/) simulations from the Rice Virtual Lab in Statistics, but I could find nothing similar to explain the mechanics of important regression concepts.
 
+![alt text](./GIFS/confidence intervals.gif "Confidence intervals with sample size of 10" )
+
+## Run the R Program
+
 Scripts are written in R. To run these examples in class, you need to source the following code (or download the scripts from this repository):
 
 ~~~r
@@ -27,7 +31,7 @@ The function draws the sample, draws the true regression slope, then draws the s
 	createSample( 25 )
 ~~~
 
-![alt text]("./GIFS/draw sample.emf")
+![alt text]("./GIFS/sample.png")
 
 
 
@@ -48,7 +52,7 @@ The argument `slowSim=T` requires you to click on the graphing window for each n
 	sampDistOfSlope( num.trials=1000, samp.size=75, slowSim=F )
 ~~~
 
-![alt text]("./GIFS/samp dist.emf")
+![alt text]("./GIFS/samp dist.png")
 
 
 ## CONFIDENCE INTERVALS FOR A SLOPE ESTIMATE
@@ -71,7 +75,7 @@ We want understand the relationships between four things:
 
 Demonstration of 95% confidence intervals. Approximately 95 out of 100 samples will result in confidence intervals that contain the true slope. Note, if a confidence interval contains zero, the slope is not statistically significant at the alpha=0.05 level. 
 
-![alt text](./GIFS/confidence intervals.gif "Confidence intervals with sample size of 25" )
+![alt text](./GIFS/confidence intervals.gif "Confidence intervals with sample size of 10" )
 
 We would not have a lot of comfort with this research design because even though we know the program has an impact (because we have the full population data to confirm) if we use a sample of 10 then we achieve significance only about half of the time, even though our estimates are unbiased. This concept is called statistical power.
 
