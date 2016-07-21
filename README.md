@@ -31,7 +31,7 @@ The function draws the sample, draws the true regression slope, then draws the s
 	createSample( 25 )
 ~~~
 
-![alt text]("./GIFS/sample.png")
+![alt text](./GIFS/sample.png)
 
 
 
@@ -52,7 +52,7 @@ The argument `slowSim=T` requires you to click on the graphing window for each n
 	sampDistOfSlope( num.trials=1000, samp.size=75, slowSim=F )
 ~~~
 
-![alt text]("./GIFS/samp dist.png")
+![alt text](./GIFS/samp dist.png)
 
 
 ## CONFIDENCE INTERVALS FOR A SLOPE ESTIMATE
@@ -88,7 +88,7 @@ We would not have a lot of comfort with this research design because even though
 
 If we want to increase the statistical power to ensure that we have more confidence in our results (achieve statistical significance) we can increase the sample size from 10 to 25. Notice how much smaller the confidence intervals become.
 
-![alt text]("./GIFS/confidence intervals 2.gif")
+![alt text](./GIFS/confidence intervals 2.gif)
 
 
 
@@ -101,7 +101,7 @@ Alternatively, although we cannot increase the effect size, it is useful to note
 	confIntervalOfSlope( num.trials=100, samp.size=10, effect.size=7, slowSim=F )
 ```
 
-![alt text]("./GIFS/increase+sample+size.gif")
+![alt text](./GIFS/increase+sample+size.gif)
 
 
 
@@ -138,7 +138,7 @@ for( i in 1:1000 )
 
 ~~~
 
-![alt text]("./GIFS/measurement error dv.gif")
+![alt text](./GIFS/measurement error dv.gif)
 
 
 
@@ -175,7 +175,7 @@ for( i in 1:1000 )
 
 ~~~
 
-![alt text]("./GIFS/measurement error iv.gif")
+![alt text](./GIFS/measurement error iv.gif)
 
 
 ~~~r
@@ -203,7 +203,7 @@ for( i in 1:1000 )
 
 ~~~
 
-![alt text]("./GIFS/measurement error iv 2.gif")
+![alt text](./GIFS/measurement error iv 2.gif)
 
 
 
