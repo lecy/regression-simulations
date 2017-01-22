@@ -52,7 +52,7 @@ The argument `slowSim=T` requires you to click on the graphing window for each n
 	sampDistOfSlope( num.trials=1000, samp.size=75, slowSim=F )
 ~~~
 
-![alt text](./GIFS/samp dist.png)
+![alt text](./GIFS/samplng_dist_slope.gif)
 
 
 ## CONFIDENCE INTERVALS FOR A SLOPE ESTIMATE
