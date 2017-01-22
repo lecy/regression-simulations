@@ -53,6 +53,7 @@ The argument `slowSim=T` requires you to click on the graphing window for each n
 ~~~
 
 ![alt text](./GIFS/sampling_dist_slope.gif)
+![alt text](./GIFS/sampling_dist_slope_50.gif)
 
 
 ## CONFIDENCE INTERVALS FOR A SLOPE ESTIMATE
