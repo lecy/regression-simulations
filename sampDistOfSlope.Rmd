@@ -1,6 +1,8 @@
 # SAMPLING DISTRIBUTION OF THE SLOPE
 
+Demonstrate the intuition behind the standard ("average") error in measuring the slope when you have different sample sizes and repeated samples.
 
+```r
 
 sampDistOfSlope <- function( num.trials=1000, samp.size=10, slowSim=F )
 {
@@ -53,17 +55,27 @@ sampDistOfSlope <- function( num.trials=1000, samp.size=10, slowSim=F )
       
 }
 
+```
 
 # USE:
 
+* *num.trials* controls how many times sampling is repeated
+* *samp.size* determines how many points are selected in each draw
+* *slowSim=T* activates par( ask=T )
+
+If *slowSim=T* then you have to click on the graph to advance it each time.
+
+```
 sampDistOfSlope( num.trials=1000, samp.size=10, slowSim=F )
 
+```
 
 
 
 
 # CREATE GIF
 
+```r
 library( animation )
 setwd("gifs")
 
@@ -88,14 +100,17 @@ im.convert( "samp_dist*.png", output = "sampling_dist_slope_50.gif" )
 
 unlink( "samp_dist*.png")
 
+```
 
 
 
 ## SAMPLE SIZE = 10
+
 ![]( ./GIFS/sampling_dist_slope.gif )
 
 
 
 
 ## SAMPLE SIZE = 50
+
 ![]( ./GIFS/sampling_dist_slope_50.gif )
