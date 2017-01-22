@@ -31,7 +31,7 @@ The function draws the sample, draws the true regression slope, then draws the s
 	createSample( 25 )
 ~~~
 
-![alt text](./GIFS/sample.png)
+![alt text](./GIFS/reg_sample_orange.gif)
 
 
 
