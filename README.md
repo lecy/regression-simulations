@@ -139,9 +139,11 @@ for( i in 1:1000 )
 
 ~~~
 
-![](./GIFS/measurement_error_dv.gif)
+![MEDV](./GIFS/measurement_error_dv.gif)
 
+![MEDV](/GIFS/measurement_error_dv.gif)
 
+![MEDV](GIFS/measurement_error_dv.gif)
 
 ### Measurement Error Added to the IV
 
