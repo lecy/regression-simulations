@@ -176,7 +176,7 @@ for( i in 1:1000 )
 
 ~~~
 
-![]('GIFS/measurement%20error%20iv.gif')
+![](GIFS/measurement%20error%20iv.gif)
 
 
 ~~~r
