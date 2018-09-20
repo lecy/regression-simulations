@@ -139,7 +139,7 @@ for( i in 1:1000 )
 
 ~~~
 
-![alt text](./GIFS/measurement error dv.gif)
+![](./GIFS/measurement+error+dv.gif)
 
 
 
@@ -176,7 +176,7 @@ for( i in 1:1000 )
 
 ~~~
 
-![alt text](./GIFS/measurement error iv.gif)
+![](./GIFS/measurement+error+iv.gif)
 
 
 ~~~r
@@ -204,7 +204,7 @@ for( i in 1:1000 )
 
 ~~~
 
-![alt text](./GIFS/measurement error iv 2.gif)
+![](./GIFS/measurement+error+iv+2.gif)
 
 
 
