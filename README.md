@@ -4,7 +4,7 @@ This tutorial contains regression simulations of basic components of the regress
 
 It was inspired by the [sampling distribution of the mean](http://onlinestatbook.com/stat_sim/sampling_dist/) simulations from the Rice Virtual Lab in Statistics, but I could find nothing similar to explain the mechanics of important regression concepts.
 
-![Confidence intervals with sample size of 10](./GIFS/confidence%20intervals.gif  )
+![Confidence intervals with sample size of 10](./GIFS/confidence%20intervals.gif)
 
 ## Run the R Program
 
@@ -52,8 +52,8 @@ The argument `slowSim=T` requires you to click on the graphing window for each n
 	sampDistOfSlope( num.trials=1000, samp.size=75, slowSim=F )
 ~~~
 
-![alt text](./GIFS/sampling_dist_slope.gif)
-![alt text](./GIFS/sampling_dist_slope_50.gif)
+![text](./GIFS/sampling_dist_slope.gif)
+![text](./GIFS/sampling_dist_slope_50.gif)
 
 
 ## CONFIDENCE INTERVALS FOR A SLOPE ESTIMATE
@@ -89,7 +89,7 @@ We would not have a lot of comfort with this research design because even though
 
 If we want to increase the statistical power to ensure that we have more confidence in our results (achieve statistical significance) we can increase the sample size from 10 to 25. Notice how much smaller the confidence intervals become.
 
-![alt text](./GIFS/confidence intervals 2.gif)
+![](./GIFS/confidence%20intervals%202.gif)
 
 
 
@@ -102,7 +102,7 @@ Alternatively, although we cannot increase the effect size, it is useful to note
 	confIntervalOfSlope( num.trials=100, samp.size=10, effect.size=7, slowSim=F )
 ```
 
-![alt text](./GIFS/increase+sample+size.gif)
+![](./GIFS/increase+sample+size.gif)
 
 
 
@@ -141,9 +141,7 @@ for( i in 1:1000 )
 
 ![MEDV](./GIFS/measurement_error_dv.gif)
 
-![MEDV](/GIFS/measurement_error_dv.gif)
 
-![MEDV](GIFS/measurement_error_dv.gif)
 
 ### Measurement Error Added to the IV
 
@@ -178,7 +176,7 @@ for( i in 1:1000 )
 
 ~~~
 
-![]('GIFS/measurement error iv.gif')
+![]('GIFS/measurement%20error%20iv.gif')
 
 
 ~~~r
@@ -206,7 +204,7 @@ for( i in 1:1000 )
 
 ~~~
 
-![](./GIFS/measurement+error+iv+2.gif)
+![](./GIFS/measurement%20error%20iv%202.gif)
 
 
 
