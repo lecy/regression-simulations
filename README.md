@@ -4,7 +4,7 @@ This tutorial contains regression simulations of basic components of the regress
 
 It was inspired by the [sampling distribution of the mean](http://onlinestatbook.com/stat_sim/sampling_dist/) simulations from the Rice Virtual Lab in Statistics, but I could find nothing similar to explain the mechanics of important regression concepts.
 
-![alt text](./GIFS/confidence intervals.gif "Confidence intervals with sample size of 10" )
+!["Confidence intervals with sample size of 10"](./GIFS/confidence%intervals.gif  )
 
 ## Run the R Program
 
