@@ -76,7 +76,7 @@ We want understand the relationships between four things:
 
 Demonstration of 95% confidence intervals. Approximately 95 out of 100 samples will result in confidence intervals that contain the true slope. Note, if a confidence interval contains zero, the slope is not statistically significant at the alpha=0.05 level. 
 
-![alt text](./GIFS/confidence intervals.gif "Confidence intervals with sample size of 10" )
+![alt text](./GIFS/confidence%20intervals.gif)
 
 We would not have a lot of comfort with this research design because even though we know the program has an impact (because we have the full population data to confirm) if we use a sample of 10 then we achieve significance only about half of the time, even though our estimates are unbiased. This concept is called statistical power.
 
