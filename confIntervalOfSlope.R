@@ -124,4 +124,23 @@ confIntervalOfSlope <- function( num.trials=100, samp.size=10, effect.size=1, sl
 
 
 
+library( animation )
+
+dir.create("gifs")
+setwd("gifs")
+
+
+saveGIF({
+
+  # par( mar=c(0,0,0,0) )
+  confIntervalOfSlope( num.trials=100, samp.size=10, effect.size=3, slowSim=F )
+
+}, 
+
+movie.name = "confidence-interval-of-slope.gif",   # name of your gif
+interval = 0.1,                    # controls the animation speed
+ani.width = 800,                   # size of the gif in pixels
+ani.height = 400 )                 # size of the git in pixels
+
+
 
