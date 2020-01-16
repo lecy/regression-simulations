@@ -88,15 +88,14 @@ confIntervalOfSlope <- function( num.trials=100, samp.size=10, effect.size=1, sl
 
             if( falls.outside.ci )
             { 
-                col.point.estimate[i] <- "steelblue" 
-                col.point.est.border[i] <- "navy"
-                col.ci[i] <- "steelblue"
+                col.point.estimate[i] <- "darkorchid" 
+                col.point.est.border[i] <- "darkorchid4"
+                col.ci[i] <- "darkorchid"
                 alpha.ci[i] <- 0.9
                 lwd.ci[i] <- 2
                 cex.point.estimate[i] <- 1.5
             }
 
-            # darkorchid4
              segments( x0=ci.lower, y0=1:i, x1 = ci.upper, lwd=lwd.ci,
                        col=adjustcolor( col.ci, alpha.f = 0.7 )  )
              	
@@ -115,6 +114,7 @@ confIntervalOfSlope <- function( num.trials=100, samp.size=10, effect.size=1, sl
 
 
 }
+
 
 
 # confIntervalOfSlope( num.trials=100, samp.size=10, effect.size=3, slowSim=F )
