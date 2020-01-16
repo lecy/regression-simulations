@@ -4,7 +4,7 @@ This tutorial contains regression simulations of basic components of the regress
 
 It was inspired by the [sampling distribution of the mean](http://onlinestatbook.com/stat_sim/sampling_dist/) simulations from the Rice Virtual Lab in Statistics, but I could find nothing similar to explain the mechanics of important regression concepts.
 
-![Confidence intervals with sample size of 10](./GIFS/confidence%20intervals.gif)
+![Confidence intervals with sample size of 10](./GIFS/confidence-interval-of-slope.gif)
 
 ## Run the R Program
 
@@ -52,8 +52,8 @@ The argument `slowSim=T` requires you to click on the graphing window for each n
 	sampDistOfSlope( num.trials=1000, samp.size=75, slowSim=F )
 ~~~
 
-![text](./GIFS/sampling_dist_slope.gif)
-![text](./GIFS/sampling_dist_slope_50.gif)
+![text](./GIFS/samp-dist-of-slope.gif)
+![text](./GIFS/samp-dist-of-slope-50.gif)
 
 
 ## CONFIDENCE INTERVALS FOR A SLOPE ESTIMATE
