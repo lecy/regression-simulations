@@ -61,3 +61,18 @@ sampDistOfSlope <- function( num.trials=1000, samp.size=10, slowSim=F )
 #  If slowSim=T then you have to click on the graph to advance it each time.
 #
 #  sampDistOfSlope( num.trials=1000, samp.size=10, slowSim=F )
+
+
+library( animation )
+
+saveGIF({
+
+  sampDistOfSlope( num.trials=100, samp.size=50, slowSim=F )
+
+}, 
+
+movie.name = "samp-dist-of-slope-50.gif",   # name of your gif
+interval = 0.1,                    # controls the animation speed
+ani.width = 800,                   # size of the gif in pixels
+ani.height = 400 )                 # size of the git in pixels
+
